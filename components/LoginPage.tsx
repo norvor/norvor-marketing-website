@@ -14,8 +14,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
   // Get the API URL from environment variables
   const API_URL = import.meta.env.VITE_API_BASE_URL;
   // Define the URL for your main application for redirection
-  const MAIN_APP_URL = 'http://localhost:3001'; // Or your deployed main app URL
-  //const MAIN_APP_URL = 'https://app.norvorx.com'; // Or your deployed main app URL
+  //const MAIN_APP_URL = 'http://localhost:3001'; // Or your deployed main app URL
+  const MAIN_APP_URL = 'https://app.norvorx.com'; // Or your deployed main app URL
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setIsLoading(true);
